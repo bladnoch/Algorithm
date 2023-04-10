@@ -55,12 +55,6 @@ build CMakeFiles/withC.dir/main.cpp.o: CXX_COMPILER__withC_Debug /Users/doungukk
   OBJECT_DIR = CMakeFiles/withC.dir
   OBJECT_FILE_DIR = CMakeFiles/withC.dir
 
-build CMakeFiles/withC.dir/SpecialMatrices/test.cpp.o: CXX_COMPILER__withC_Debug /Users/doungukkim/Desktop/workspace/AlgorithmStudy/withC/SpecialMatrices/test.cpp || cmake_object_order_depends_target_withC
-  DEP_FILE = CMakeFiles/withC.dir/SpecialMatrices/test.cpp.o.d
-  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++17
-  OBJECT_DIR = CMakeFiles/withC.dir
-  OBJECT_FILE_DIR = CMakeFiles/withC.dir/SpecialMatrices
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target withC
@@ -69,7 +63,7 @@ build CMakeFiles/withC.dir/SpecialMatrices/test.cpp.o: CXX_COMPILER__withC_Debug
 #############################################
 # Link the executable withC
 
-build withC: CXX_EXECUTABLE_LINKER__withC_Debug CMakeFiles/withC.dir/main.cpp.o CMakeFiles/withC.dir/SpecialMatrices/test.cpp.o
+build withC: CXX_EXECUTABLE_LINKER__withC_Debug CMakeFiles/withC.dir/main.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk
   OBJECT_DIR = CMakeFiles/withC.dir
   POST_BUILD = :
