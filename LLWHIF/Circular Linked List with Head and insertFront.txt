@@ -1,0 +1,14 @@
+Circular Linked List with Head and insertFront
+헤드가 있고 앞에 추가되는 원형 연결 리스트
+
+head가 생성
+다음 생성되는 노드는 노드안에 데이터와 head 주소를 저장하고
+head는 바로 전에 들어온 노드의 주소를 저장하고 있는다
+다음 생성되는 노드는 노드안에 데이터와 head가 가지고있던 바로 전 노드의 주소를 저장한다.
+반복..
+
+ex) (데이터/포인터)
+head(""/Null)
+node1(10/head) head(""/node1)
+node2(20/node1) head(""/node2)
+repeating..
