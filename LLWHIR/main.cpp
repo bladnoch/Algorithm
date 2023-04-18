@@ -3,7 +3,9 @@ using namespace std;
 using std::cin;
 using std::cout;
 
+
 template <typename T>
+
 
 class ChainNode {
 public:
@@ -12,14 +14,19 @@ public:
     ChainNode() { link = NULL; }
     ChainNode(T element) { data = element; link = NULL; }
 
+
 };
+
 
 template <typename T>
 
+
 class CircularLinkedList {
+
 
 private:
     ChainNode<T>* first; //포인터 이름 head
+
 
 public:
     CircularLinkedList() {  //처음 헤드 만들 때 실행
@@ -31,14 +38,15 @@ public:
         while (cur != first) {
             cout << "Node<"<<cur->data << "> is deleted "<< endl;
             ChainNode<T>* next = cur->link;
-
             delete cur;
             cur = next;
         }
         delete first;
 
-        cout << "\nDestructior is executed successfully!\n";
+
+        cout << "\nDestructor is executed successfully!\n";
     }
+
 
     void insertFront(const T& item) {
         ChainNode<T>* newNode = new ChainNode<T>(item); //(10)(10/Null)
@@ -46,8 +54,10 @@ public:
         first->link = newNode;                           //head(/newNode)
     }
 
+
     void insertRear(const T& item) {
         ChainNode<T>* newNode = new ChainNode<T>(item);
+
 
         if (first->link == first) { // 리스트가 비어있는 경우
             first->link = newNode;
@@ -73,6 +83,7 @@ public:
         }
         cout << endl << endl;
     }
+
     void Search(const T& x)const {
         ChainNode<T>* cur = first->link;
         int idx = 1;
@@ -81,7 +92,6 @@ public:
             cur = cur->link;
             idx++;
         }
-
         if (cur==first){
             cout << "There's no Data your wants to search!\n\n";
         }
@@ -89,7 +99,6 @@ public:
             cout << "It is in Node number " << idx << "\n\n";
         }
     }
-
 };
 
 int main() {
@@ -119,9 +128,5 @@ int main() {
     cin >> get;
     cout << "\n";
     cLList.Search(get);
-
-
-//    cLList.insertRear(40);
-//    cLList.print();
     return 0;
 }
