@@ -1,63 +1,65 @@
 #include <iostream>
 using namespace std;
 
-template<typename T>
-class ChainNode{
+template <typename T>
+
+class ChainNode {
+
 public:
-    T data;
-    ChainNode<T>* link;
-    ChainNode(){
-        link=NULL;
-    }
-    ChainNode(T element){
-        data=element;
-        link=NULL;
-    }
+    T data;             //data: 데이타
+    ChainNode<T>* link; //link: 포인더(주소)
+    ChainNode() { link = NULL; }
+    ChainNode(T element) { data = element; link = NULL; }
 
 };
 
-template<typename T>
-class CircularLinkedList{
+template <typename T>
+
+class CircularLinkedList {
+
 private:
-    ChainNode<T>* head;
+    ChainNode<T>* head; //포인터 이름 head
 
 public:
-    CircularLinkedList(){
+    CircularLinkedList() {  //처음 헤드 만들 때 실행
         head = new ChainNode<T>();
-        head->link=head;
+        head->link = head; //head의 링크 다 지정 해준다  head(/head본인의 주소)
     }
-
-    ~CircularLinkedList(){
-        ChainNode<T>* curr = head->link;
-        while(curr!=head){
-            ChainNode<T>* next=curr->link;
-            delete curr;
-            curr=next;
+    ~CircularLinkedList() {
+        ChainNode<T>* current = head->link;
+        while (current != head) {
+            ChainNode<T>* next = current->link;
+            delete current;
+            current = next;
         }
         delete head;
     }
-    void insertFront(const T& item){
-        ChainNode<T>* newNode=new ChainNode<T>(item);
-        newNode->link = head->link;
-        head ->link= newNode;
+
+    void insertEnd(const& item){
+        ChainNode<T>* newNode=new ChainNode<T>();
     }
-    void print()const{
-        ChainNode<T>* curr=head->link;
-        while(curr!=head){
-            cout<< curr->data<<" ";
-            curr=curr->link;
+    void insertFront(const T& item) {
+        ChainNode<T>* newNode = new ChainNode<T>(item); //(10)(10/Null)
+        newNode->link = head->link;                     // (10)(10/link=head의 주소)
+        head->link = newNode;                           //head(/newNode)
+    }
+
+    void print() const {
+        ChainNode<T>* current = head->link;
+        while (current != head) {
+            cout << current->data << " ";
+            current = current->link;
         }
         cout << endl;
     }
 };
 
-int main(){
-    CircularLinkedList<int> cList;
-    cList.insertFront(10);
-    cList.insertFront(20);
-    cList.insertFront(30);
-    cList.insertFront(70);
-    cList.insertFront(13);
-    cList.print();
+int main() {
+    CircularLinkedList<int> cLList;
+    cLList.insertFront(10);
+    cLList.insertFront(20);
+    cLList.insertFront(5);
+    cLList.insertFront(40);
+    cLList.print();
     return 0;
 }
