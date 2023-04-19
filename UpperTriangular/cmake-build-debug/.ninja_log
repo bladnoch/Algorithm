@@ -1,0 +1,11 @@
+# ninja log v5
+0	315	1681872360650719234	CMakeFiles/UpperTriangular.dir/main.cpp.o	d75a0f63fd963f43
+317	355	1681872360692342835	UpperTriangular	b56e2147f6b24d1d
+8	629	1681872516324107473	CMakeFiles/UpperTriangular.dir/main.cpp.o	d75a0f63fd963f43
+629	682	1681872516381840778	UpperTriangular	b56e2147f6b24d1d
+8	632	1681873493796242583	CMakeFiles/UpperTriangular.dir/main.cpp.o	d75a0f63fd963f43
+632	681	1681873493849384454	UpperTriangular	b56e2147f6b24d1d
+8	563	1681873530095766199	CMakeFiles/UpperTriangular.dir/main.cpp.o	d75a0f63fd963f43
+563	611	1681873530146987691	UpperTriangular	b56e2147f6b24d1d
+10	651	1681873655559532941	CMakeFiles/UpperTriangular.dir/main.cpp.o	d75a0f63fd963f43
+652	704	1681873655614264454	UpperTriangular	b56e2147f6b24d1d
