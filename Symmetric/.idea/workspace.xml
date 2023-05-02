@@ -25,6 +25,7 @@
       <change beforePath="$PROJECT_DIR$/../LLWHIF/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../LLWHIF/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../LLWHIR/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LLWHIR/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../LLWHIR/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../LLWHIR/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../UpperTriangular/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../UpperTriangular/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../UpperTriangular/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../UpperTriangular/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
@@ -84,6 +85,7 @@
       <updated>1682569423154</updated>
       <workItem from="1682569424493" duration="1366000" />
       <workItem from="1682622453196" duration="37000" />
+      <workItem from="1682957417670" duration="34000" />
     </task>
     <servers />
   </component>

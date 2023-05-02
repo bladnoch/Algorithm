@@ -21,7 +21,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92aa2442-d6bd-4d6a-b96e-a678d1898b7c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../UpperTriangular/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../UpperTriangular/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LLWHIF/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LLWHIF/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LLWHIF/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../LLWHIF/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Queue/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Queue/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Symmetric/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Symmetric/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UpperTriangular/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../UpperTriangular/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UpperTriangular/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../UpperTriangular/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,6 +87,9 @@
       <workItem from="1681828113629" duration="3375000" />
       <workItem from="1681869573037" duration="16000" />
       <workItem from="1681873732420" duration="614000" />
+      <workItem from="1682622437432" duration="2000" />
+      <workItem from="1682957400272" duration="14000" />
+      <workItem from="1683007468482" duration="123000" />
     </task>
     <servers />
   </component>
@@ -91,5 +101,16 @@
     <isAutomaticCheckingOnLaunch value="false" />
     <isAutomaticFoundErrors value="true" />
     <isAutomaticFoundErrors value="true" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

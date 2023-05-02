@@ -1,4 +1,4 @@
-"/Users/doungukkim/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=/Users/doungukkim/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/CLion.app/Contents/bin/ninja/mac/ninja" -G Ninja -S /Users/doungukkim/Desktop/workspace/AlgorithmStudy/Queue -B /Users/doungukkim/Desktop/workspace/AlgorithmStudy/Queue/cmake-build-debug
+"/Users/doungukkim/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=/Users/doungukkim/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/CLion.app/Contents/bin/ninja/mac/ninja" -G Ninja -S /Users/doungukkim/Desktop/workspace/AlgorithmStudy/Queue -B /Users/doungukkim/Desktop/workspace/AlgorithmStudy/Queue/cmake-build-debug
 -- The C compiler identification is AppleClang 14.0.3.14030022
 -- The CXX compiler identification is AppleClang 14.0.3.14030022
 -- Detecting C compiler ABI info
