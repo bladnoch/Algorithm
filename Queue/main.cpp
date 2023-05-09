@@ -71,26 +71,14 @@ public:
                 rear = newNode;
             }
             else {
-                Node<T>* currNode = front;
-                Node<T>* prevNode = NULL;
-                while (currNode != NULL) {
-                    if (newNode->data > currNode->data) {
-                        break;
-                    }
-                    prevNode = currNode;
-                    currNode = currNode->link;
-                }
-                if (prevNode == NULL) {
-                    newNode->link = front;
+                Node<T>* newNode = new Node<T>(item);
+                if (IsEmpty()) {
+                    rear = newNode;
                     front = newNode;
                 }
-                else if (currNode == NULL) {
+                else {
                     rear->link = newNode;
                     rear = newNode;
-                }
-                else {
-                    prevNode->link = newNode;
-                    newNode->link = currNode;
                 }
             }
         }
@@ -100,14 +88,41 @@ public:
 
     T pop()
     {
-        Node<T> *popNode;
+        Node<T>* popNode;
         T popData;
-        // (2-1) Program an operation pop for type1 (10 Points)
+
         if (type == 1) {
+            // Pop operation for type 1
+            if (IsEmpty()) {
+                cout << "Queue is empty" << endl;
+                return -1; // NULL
+            }
+            else {
+                Node<T>* temp = front;
+                T popData = temp->data;
+                front = front->link;
+                delete temp;
+                return popData;
+            }
         }
-            // (2-2) Program an operation pop for type2 (30 Points)
         else {
-            Node<T>* secondNode;
+            if (IsEmpty()) {
+                cout << "Queue is empty!" << endl;
+                return -1; // 노드가 없는 경우, 에러를 반환
+            }
+            else {
+                Node<T>* temp = front;
+                T popData = temp->data;
+                if (front == rear) {
+                    front = NULL;
+                    rear = NULL;
+                }
+                else {
+                    front = front->link;
+                }
+                delete temp;
+                return popData;
+            }
         }
         queueSize--;
         return popData;
