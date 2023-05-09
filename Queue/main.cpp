@@ -97,6 +97,7 @@ public:
         queueSize++;
     }
 
+
     T pop()
     {
         Node<T> *popNode;
