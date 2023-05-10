@@ -9,15 +9,13 @@ import java.util.Scanner;
  *
  */
 
+
 public class Q10828 {
-    private static List<Integer> target=new ArrayList<>();
+    final public static int NO=-1;
+    public static List<Integer> target=new ArrayList<>();
     public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
         int times=sc.nextInt();
-        repeat(times, sc);
-
-    }
-    public static void repeat(int times, Scanner sc){
         for( int i=1;i<times+1;i++){
             String[] input =sc.nextLine().split(" ");
 
@@ -25,21 +23,20 @@ public class Q10828 {
                 target.add(Integer.parseInt(input[1]));
             } else if (input[0].equals("pop")) {
                 if(target.isEmpty()) {
-                    System.out.println(-1);
+                    System.out.println(NO);
                 } else {
                     System.out.println(target.get(target.size()-1));
-                    target.remove(target.size()-1);
+                    target.remove(target.size()+NO);
                 }
             } else if (input[0].equals("size")) {
                 System.out.println(target.size());
-
             } else if (input[0].equals("empty")) {
                 System.out.println((target.isEmpty())?1:0);
             } else if (input[0].equals("top")) {
                 if(target.isEmpty()){
-                    System.out.println(-1);
+                    System.out.println(NO);
                 }   else
-                    System.out.println(target.get(target.size()-1));
+                    System.out.println(target.get(target.size()+NO));
             } else{
                 i--;
             }
