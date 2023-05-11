@@ -55,7 +55,7 @@ public:
 
         // (1-1) Program an operation push for type1 (10 Points)
         if (type == 1) {
-            if (IsEmpty()) {
+            if (front == NULL) {
                 front = newNode;
                 rear = newNode;
             }
@@ -66,20 +66,13 @@ public:
         }
             // (1-2) Program an operation push for type2 (30 Points)
         else {
-            if (IsEmpty()) {
+            if (front == NULL) {
                 front = newNode;
                 rear = newNode;
             }
             else {
-                Node<T>* newNode = new Node<T>(item);
-                if (IsEmpty()) {
-                    rear = newNode;
-                    front = newNode;
-                }
-                else {
-                    rear->link = newNode;
-                    rear = newNode;
-                }
+                newNode->link = front;
+                front = newNode;
             }
         }
         queueSize++;
@@ -92,36 +85,40 @@ public:
         T popData;
 
         if (type == 1) {
-            // Pop operation for type 1
-            if (IsEmpty()) {
-                cout << "Queue is empty" << endl;
-                return -1; // NULL
+            if (front == NULL) {
+                cout << "Error: Queue is empty" << endl;
+                return T(); // Return default value of T
             }
-            else {
-                Node<T>* temp = front;
-                T popData = temp->data;
-                front = front->link;
-                delete temp;
-                return popData;
-            }
+
+            T popData = front->data;
+            Node<T>* temp = front;
+
+            // Remove the first node from the queue
+            front = front->link;
+            delete temp;
         }
         else {
-            if (IsEmpty()) {
-                cout << "Queue is empty!" << endl;
-                return -1; // 노드가 없는 경우, 에러를 반환
+            if (front == NULL) {
+                cout << "Error: Queue is empty" << endl;
+                return T(); // Return default value of T
+            }
+
+            T popData = rear->data;
+
+            if (front == rear) {
+                delete front;
+                front = NULL;
+                rear = NULL;
             }
             else {
                 Node<T>* temp = front;
-                T popData = temp->data;
-                if (front == rear) {
-                    front = NULL;
-                    rear = NULL;
+                while (temp->link != rear) {
+                    temp = temp->link;
                 }
-                else {
-                    front = front->link;
-                }
+                rear = temp;
+                temp = temp->link;
                 delete temp;
-                return popData;
+                rear->link = NULL;
             }
         }
         queueSize--;
