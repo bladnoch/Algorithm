@@ -53,7 +53,7 @@ public:
     {
         Node<T>* newNode = new Node<T>(item);
 
-        // (1-1) Program an operation push for type1 (10 Points)
+        // type 1
         if (type == 1) {
             if (front == NULL) {
                 front = newNode;
@@ -64,7 +64,7 @@ public:
                 rear = newNode;
             }
         }
-            // (1-2) Program an operation push for type2 (30 Points)
+        // type 2
         else {
             if (front == NULL) {
                 front = newNode;
@@ -84,23 +84,24 @@ public:
         Node<T>* popNode;
         T popData;
 
+        // type 1
         if (type == 1) {
             if (front == NULL) {
-                cout << "Error: Queue is empty" << endl;
-                return T(); // Return default value of T
+                return T();
             }
 
             T popData = front->data;
             Node<T>* temp = front;
 
-            // Remove the first node from the queue
+
             front = front->link;
             delete temp;
         }
+
+        // type 2
         else {
             if (front == NULL) {
-                cout << "Error: Queue is empty" << endl;
-                return T(); // Return default value of T
+                return T();
             }
 
             T popData = rear->data;
