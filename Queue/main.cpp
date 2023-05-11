@@ -86,39 +86,28 @@ public:
 
         // type 1
         if (type == 1) {
-            if (front == NULL) {
-                return T();
-            }
-
-            T popData = front->data;
-            Node<T>* temp = front;
-
-
+            popNode = front;
+            popData = front->data;
             front = front->link;
-            delete temp;
+            delete popNode;
         }
 
         // type 2
         else {
-            if (front == NULL) {
-                return T();
-            }
-
             T popData = rear->data;
-
             if (front == rear) {
                 delete front;
                 front = NULL;
                 rear = NULL;
             }
             else {
-                Node<T>* temp = front;
-                while (temp->link != rear) {
-                    temp = temp->link;
+                Node<T>* secondNode = front;
+                while (secondNode->link != rear) {
+                    secondNode = secondNode->link;
                 }
-                rear = temp;
-                temp = temp->link;
-                delete temp;
+                rear = secondNode;
+                secondNode = secondNode->link;
+                delete secondNode;
                 rear->link = NULL;
             }
         }
