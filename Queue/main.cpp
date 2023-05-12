@@ -1,6 +1,11 @@
 #include <iostream>
 #include <time.h>
 using namespace std;
+/**
+ * make queue with differernt head node
+ * @athour Doung uk Kim
+ *
+ */
 
 #pragma warning (disable:4996)
 
