@@ -4,6 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+/**
+ * sum calc
+ * @version v0.0.1
+ * @author Dounguk Kim
+ * @since 5/26/2023
+ *
+ */
 public class Q10952 {
     public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
@@ -15,12 +22,10 @@ public class Q10952 {
         while(true){
             if (rotate){
                 temp[0]=sc.nextInt();
-//                System.out.println("if "+temp[0]);
                 rotate=false;
             }
             else{
                 temp[1]=sc.nextInt();
-//                System.out.println("else "+temp[1]);
                 if(!rotate){
                     if (temp[0]+temp[1]==0){
                         break;
