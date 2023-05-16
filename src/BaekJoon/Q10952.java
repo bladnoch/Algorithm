@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Scanner;
 
 /**
- * sum calc
+ * B5 Complited : sum calc
  * @version v0.0.1
  * @author Dounguk Kim
  * @since 5/26/2023
