@@ -46,7 +46,7 @@ public class Q18258 {
         if(num.isEmpty()){
             num.add(-1);
         } else {
-            num.
+//            num.
         }
     }
     public static void mySize(){
